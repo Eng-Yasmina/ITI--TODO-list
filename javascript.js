@@ -36,8 +36,9 @@ newTask.appendChild(button);
 // Appends newTask container <div id="newtask"> & tasks <div id="tasks"> to the container div <div class="container">
 container.appendChild(newTask);
 container.appendChild(tasks);
-// Appends the container div <div class="container"> to the body
-document.body.appendChild(container);
+// Appends the container div <div class="container"> to fragment and then add this fragment to the body
+mainFragment.appendChild(container);
+document.body.appendChild(mainFragment);
 
 /**
  * Begins Main Function
